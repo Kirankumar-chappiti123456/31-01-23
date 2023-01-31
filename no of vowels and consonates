@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[]="kirankumatyut1122334&122!@#$%";
+    int l=strlen(a);
+    printf("%d\n",l);
+    int i=0,al=0,c=0,v=0;
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(a[i]=='a' || a[i]=='e'|| a[i]=='i' || a[i]=='o'|| a[i]=='u'||a[i]=='A' || a[i]=='E'|| a[i]=='I' || a[i]=='O'|| a[i]=='U')
+        {
+            v++;
+        }
+        else
+        {
+            c++;
+        }
+    }
+    printf("%d\n",v);
+    printf("%d",c);
+}
