@@ -1,0 +1,15 @@
+#include<stdio.h>
+int main()
+{
+    char a[]="kiran kumar i am yadav",ch='k';
+    int i=0,c=0;
+    char *ptr=(char*)&a;
+    for(i=0;a[i]!='\0';i++)
+    {
+        if(*(ptr+i)==ch)
+        {
+        c++;
+        }
+    }
+    printf("%c  occurence count=%d",ch,c);
+}
