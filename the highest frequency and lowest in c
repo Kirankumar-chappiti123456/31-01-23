@@ -1,0 +1,51 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    char a[]="kirankumarchappitii",k;
+    int l=strlen(a);
+    int b[l],i=0,j=0,c=0;
+    for(i=0;i<l;i++)
+    {
+        c=1;
+        for(j=i+1;j<l;j++)
+        {
+            if(a[i]==a[j])
+            {
+            c++;
+            b[j]=-1;
+            }
+        }
+        if(b[i]!=-1)
+        {
+            b[i]=c;
+        }
+    }
+    b[0];
+    for(i=0;i<l;i++)
+    {
+        if(b[i]!=-1)
+        {
+            if(b[0]<b[i])
+            {
+            b[0]=b[i];
+            k=a[i];
+            }
+        }
+        
+    }
+    printf("the highest occurence character:%c=%d\n",k,b[0]);
+    for(i=0;i<l;i++)
+    {
+        if(b[i]!=-1)
+        {
+            if(b[0]>b[i])
+            {
+            b[0]=b[i];
+            k=a[i];
+            }
+        }
+        
+    }
+    printf("the smallest occurence character:%c=%d",k,b[0]);
+}
