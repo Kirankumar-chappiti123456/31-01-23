@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    char s[]="kiran";
+    char d[]="kumar";
+    int length=0;
+   while(s[length]!='\0')
+   {
+       length++;
+   }
+   for(int j=0;d[j]!='\0';j++)
+   {
+       s[length]=d[j];
+       length++;
+   }
+   s[length]='\0';
+   printf("%s",s);
+}
