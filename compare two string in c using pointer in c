@@ -1,0 +1,18 @@
+#include<stdio.h>
+int main()
+{
+    char a[]="kiran";
+    char b[]="kiran";
+    char *p=(char*)&a;
+    char *p1=(char*)&b;
+    while(*p==*p1)
+    {
+        if(*p=='\0' || *p1=='\0')
+        
+            break;
+            p++;
+            p1++;
+        
+    }
+  (*p=='\0' && *p1=='\0')?printf("both are same"):printf("not same");
+}
